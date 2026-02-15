@@ -15,18 +15,17 @@ st.markdown("""
     .stApp { background-color: #fffaf0; }
     h1 { color: #d43f3a; font-family: 'Comic Sans MS', cursive, sans-serif; text-align: center; }
     .stMetric { background-color: #ffffff; padding: 15px; border-radius: 15px; border: 2px solid #ffe4e1; }
-    .stSidebar { background-color: #722f37; }
+    .stSidebar { background-color: #cc5064; }
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🦄 The AI Wine Whisperer")
-st.write("<p style='text-align: center;'><i>Machine Learning magic by 2025AA0</i> ✨</p>", unsafe_allow_html=True)
+st.title("🍷 The AI Wine Whisperer")
+st.write("<p style='text-align: center;'><i>Machine Learning magic by 2025AA05174</i> ✨</p>", unsafe_allow_html=True)
 
 # 2. Sidebar with BITS Pride
-st.sidebar.image("https://www.bits-pilani.ac.in/wp-content/uploads/2022/12/BITS_Pilani-Logo.png", width=100)
 st.sidebar.markdown("### 🎓 Assignment 2 Lab")
 st.sidebar.info("Goal: Predict Wine Quality (Good vs. Average)")
-model_option = st.sidebar.radio("Pick a Model Brain:", 
+model_option = st.sidebar.radio("Pick a Model Brain🤓:", 
     ["Logistic_Regression", "Decision_Tree", "kNN", "Naive_Bayes", "Random_Forest", "XGBoost"])
 
 # 3. Project Logic (Explaining the features prevents plagiarism flags)
@@ -105,3 +104,4 @@ if uploaded_file is not None:
         st.error(f"Model '{model_option}.pkl' not found. Please check your GitHub /model/ folder! 📂")
 else:
     st.info("I'm thirsty for data! Please upload a wine CSV. 🥺")
+
