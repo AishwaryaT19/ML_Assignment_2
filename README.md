@@ -1,6 +1,8 @@
-Success! Columns found: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+Problem Statement🎓 
+The objective of this assignment is to develop a predictive model to classify wine quality as "Good" (Quality score $\geq 7$) or "Average" based on 11 distinct chemical properties. This is a binary classification task performed on the Wine Quality Dataset, requiring the evaluation of six different Machine Learning algorithms to determine the most reliable predictor.
 
---- COPY THIS TABLE INTO YOUR README.md ---
+2. Model Comparison Table
+
 | ML Model Name       |   Accuracy |   AUC |   Precision |   Recall |   F1 |   MCC |
 |:--------------------|-----------:|------:|------------:|---------:|-----:|------:|
 | Logistic_Regression |       0.86 |  0.88 |        0.55 |     0.23 | 0.33 |  0.29 |
@@ -11,9 +13,8 @@ Success! Columns found: ['fixed acidity', 'volatile acidity', 'citric acid', 're
 | XGBoost             |       0.9  |  0.94 |        0.7  |     0.6  | 0.64 |  0.59 |
 
 Observations for your README:
+•	Best Performer: XGBoost is the superior model for this dataset, achieving an Accuracy of 90% and the highest MCC of 0.59, demonstrating strong reliability even with imbalanced classes.
 
-Best Model: XGBoost performed the best with an Accuracy of 0.90 and an MCC of 0.59.
+•	Model Comparison: Ensemble methods (Random Forest and XGBoost) significantly outperformed simpler linear models like Logistic Regression.
 
-Worst Model: kNN struggled with this dataset, likely due to the high dimensionality of the chemical features.
-
-Insight: Ensemble methods (Random Forest/XGBoost) significantly outperformed simple linear models.
+•	Insight: While Accuracy is high across most models, the Matthews Correlation Coefficient (MCC) reveals that kNN and Logistic Regression struggle to accurately identify "Good" wines (low Recall) compared to the tree-based models.
