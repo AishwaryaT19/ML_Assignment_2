@@ -1,9 +1,6 @@
-1. Problem Statement🎓 
-The objective of this assignment is to develop a predictive model to classify wine quality as "Good" (Quality score $\geq 7$) or "Average" based on 11 distinct chemical properties. This is a binary classification task performed on the Wine Quality Dataset, requiring the evaluation of six different Machine Learning algorithms to determine the most reliable predictor.
+Success! Columns found: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
 
-
-2. Model Comparison Table
-The following metrics were recorded during the evaluation phase within the BITS Virtual Lab environment:
+--- COPY THIS TABLE INTO YOUR README.md ---
 | ML Model Name       |   Accuracy |   AUC |   Precision |   Recall |   F1 |   MCC |
 |:--------------------|-----------:|------:|------------:|---------:|-----:|------:|
 | Logistic_Regression |       0.86 |  0.88 |        0.55 |     0.23 | 0.33 |  0.29 |
@@ -13,8 +10,10 @@ The following metrics were recorded during the evaluation phase within the BITS 
 | Random_Forest       |       0.9  |  0.94 |        0.71 |     0.51 | 0.59 |  0.54 |
 | XGBoost             |       0.9  |  0.94 |        0.7  |     0.6  | 0.64 |  0.59 |
 
+Observations for your README:
 
-3. Key Observations
-•	Best Performer: XGBoost is the superior model for this dataset, achieving an Accuracy of 90% and the highest MCC of 0.59, demonstrating strong reliability even with imbalanced classes.
-•	Model Comparison: Ensemble methods (Random Forest and XGBoost) significantly outperformed simpler linear models like Logistic Regression.
-•	Insight: While Accuracy is high across most models, the Matthews Correlation Coefficient (MCC) reveals that kNN and Logistic Regression struggle to accurately identify "Good" wines (low Recall) compared to the tree-based models.
+Best Model: XGBoost performed the best with an Accuracy of 0.90 and an MCC of 0.59.
+
+Worst Model: kNN struggled with this dataset, likely due to the high dimensionality of the chemical features.
+
+Insight: Ensemble methods (Random Forest/XGBoost) significantly outperformed simple linear models.
