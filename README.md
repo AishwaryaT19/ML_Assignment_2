@@ -20,13 +20,14 @@ The dataset used is the Wine Quality Dataset, focusing on red wine samples.
 
 c. Observations on Performance
 
-ML Model Name,Observation about model performance
-Logistic Regression,"Showed high accuracy but very low Recall (0.23), meaning it missed many ""Good"" wines.+2"
-Decision Tree,Balanced performance but susceptible to overfitting compared to ensemble methods.+2
-kNN,The weakest performer based on MCC (0.27); sensitive to the scale of chemical features.+2
-Naive Bayes,Excellent Recall (0.79) but lower Precision; tends to be overly optimistic about wine quality.+1
-Random Forest,"Strong overall performance with high AUC (0.94), providing very reliable predictions.+2"
-XGBoost,"Best Model: Achieved the highest MCC (0.59) and Accuracy (0.90), handling the imbalanced data most effectively.+1"
+|index|ML Model Name|Observation about model performance|
+|---|---|---|
+|0|Logistic Regression|Showed high accuracy but very low recall \(0\.23\), meaning it missed many Good wines\.|
+|1|Decision Tree|Balanced performance but susceptible to overfitting compared to ensemble methods\.|
+|2|kNN|The weakest performer based on MCC \(0\.27\); sensitive to the scale of chemical features\.|
+|3|Naive Bayes|Excellent recall \(0\.79\) but lower precision; tends to be overly optimistic about wine quality\.|
+|4|Random Forest|Strong overall performance with high AUC \(0\.94\), providing very reliable predictions\.|
+|5|XGBoost|Best model: achieved the highest MCC \(0\.59\) and accuracy \(0\.90\), handling the imbalanced data most effectively\.|
 
 •	Best Performer: XGBoost is the superior model for this dataset, achieving an Accuracy of 90% and the highest MCC of 0.59, demonstrating strong reliability even with imbalanced classes.
 •	Model Comparison: Ensemble methods (Random Forest and XGBoost) significantly outperformed simpler linear models like Logistic Regression.
