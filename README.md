@@ -1,6 +1,7 @@
-Success! Columns found: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+🎯 Project Overview
+This project uses Machine Learning to classify wine quality as 'Good' (Score $\geq 7$) or 'Average' based on 11 chemical features. The goal was to deploy a live Streamlit application that evaluates 6 different models.
 
---- COPY THIS TABLE INTO YOUR README.md ---
+
 | ML Model Name       |   Accuracy |   AUC |   Precision |   Recall |   F1 |   MCC |
 |:--------------------|-----------:|------:|------------:|---------:|-----:|------:|
 | Logistic_Regression |       0.86 |  0.88 |        0.55 |     0.23 | 0.33 |  0.29 |
